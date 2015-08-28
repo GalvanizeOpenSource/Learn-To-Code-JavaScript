@@ -1,5 +1,5 @@
 # Learn-to-code-week3
-Basic JavaScript and Jquery
+Basic JavaScript and jQuery
 
 In order to go over some basic JavaScript concepts lets follow the getting
 started tutorial provided by the JavaScript team.
@@ -11,13 +11,13 @@ https://www.javascript.com/try
 
 We want to write a program called rockPaperScissors.js so we can play rock paper
 scissors with our computer! Here are the steps we'll need to take to make that happen:
-    1. Get a users choice
-    2. Get the computers choice
+    1. Get a user's choice
+    2. Get the computer's choice
     3. Teach the computer how to guess rock, paper, or scissors
     4. Compare their choices and tell the user the result
 
 
-###1.Get the users choice
+###1.Get the user's choice
 The ```prompt``` method gets input from the user, ```prompt``` has an optional
 message parameter which you can use to ask the user for a response.
 
@@ -64,22 +64,22 @@ var compare = function(choice1, choice2) {
     if (choice1 === choice2) {
     return "?"; //What should the program return when the above statement evaluates to true?
 } else if(choice1 ==="rock") {
-    if (choice2==="scissors") {
+    if (choice2 === "scissors") {
     return "?"; //What should the program return when the above statement evaluates to true?
 } else {
     return "?";  //What should the program return when the above statement evaluates to true?
         }
     }
-   else if(choice1==="paper") {
-       if(choice2 ==="rock") {
+   else if(choice1 === "paper") {
+       if(choice2 === "rock") {
            return "?";  //What should the program return when the above statement evaluates to true?
        } else {
            return "?";  //What should the program return when the above statement evaluates to true?
        }
    }
 
-    else if(choice1==="scissors") {
-        if (choice2==="rock") {
+    else if(choice1 === "scissors") {
+        if (choice2 === "rock") {
             return "rock wins";
         } else {
             return "scissors wins";
