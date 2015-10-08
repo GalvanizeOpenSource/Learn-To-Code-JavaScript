@@ -114,12 +114,17 @@ var compare = function(userChoice, computerChoice) {
 ```
 
 
-
-
-###5. Here we are calling the compare function
+###5. Calling the compare function
  We're passing values of userChoice and computerChoice to run the equation. The
  function is called when someone clicks the button via the ```onclick``` attribute!
 
 ```html
 <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
 ```
+
+###6. Add Some Pizazz!
+Style the site to look better! Winning Stylesheet will be used with
+the next class.
+
+###9. Save, Commit, Push!
+Save your changes, make a commit and push your local changes to github!
