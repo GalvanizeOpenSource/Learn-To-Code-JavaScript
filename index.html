@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script>
+    var userChoice = prompt("Do you choose rock, paper or scissors?");
+
+    var computerChoice = Math.random();
+
+    if (computerChoice <= 0.33) {
+        computerChoice = "rock";
+    } else if (computerChoice <= 0.66) {
+        computerChoice = "paper";
+    } else {
+        computerChoice = "scissors";
+    }
+
+    var compare = function(userChoice, computerChoice) {
+        if (userChoice  === computerChoice) {
+              window.alert("The result is a tie!");
+          } else if(userChoice ==="rock") {
+            if (computerChoice==="scissors") {
+                window.alert("Rock wins!");
+          } else {
+                window.alert("Paper wins");
+              }
+          }
+          else if(userChoice==="paper") {
+             if(computerChoice ==="rock") {
+                 window.alert("paper wins!");
+             } else {
+                 window.alert("scissors wins!");
+             }
+          }
+
+          else if(userChoice==="scissors") {
+              if (computerChoice==="rock") {
+                  window.alert("Rock wins");
+              } else {
+                  window.alert("scissors wins");
+              }
+          }
+      };
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
+    </div>
+  </body>
+
+</html>
