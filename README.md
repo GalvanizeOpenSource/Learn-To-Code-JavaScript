@@ -1,4 +1,4 @@
-# Learn-to-code-week3
+# Learn-to-code-week-2
 
 Basic JavaScript and jQuery
 
