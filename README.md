@@ -88,12 +88,13 @@ arguments ```choice1``` and ```choice2```.
 var compare = function(userChoice, computerChoice) {
     if (userChoice  === computerChoice) {
           window.alert("The result is a tie!");
-      } else if(userChoice ==="rock") {
+      }
+      else if(userChoice ==="rock") {
         if (computerChoice==="scissors") {
             window.alert("Rock wins!");
-      } else {
-            window.alert("Paper wins");
-          }
+          } else {
+              window.alert("Paper wins");
+            }
       }
       else if(userChoice==="paper") {
          if(computerChoice ==="rock") {
@@ -112,7 +113,6 @@ var compare = function(userChoice, computerChoice) {
       }
   };
 ```
-
 
 ###5. Calling the compare function
  We're passing values of userChoice and computerChoice to run the equation. The
