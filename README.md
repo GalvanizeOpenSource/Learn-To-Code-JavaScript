@@ -1,9 +1,10 @@
-# Learn-to-code-week-2s
+# Learn-to-code-week-2
 
 Basic JavaScript and jQuery
 
 In order to go over some basic JavaScript concepts lets follow the getting
-started tutorial provided by the JavaScript team.
+started tutorial provided by the JavaScript team. It's only 8 lessons and takes
+less than 5 minutes.
 
 
 ###Lets Give JavaScript a try!
@@ -15,7 +16,8 @@ https://www.javascript.com/try
 - functions
 - if statements
 - variables
-- arguments
+- parameters vs arguments
+
 
 
 ###Rock Paper Scissors!
@@ -122,9 +124,14 @@ var compare = function(userChoice, computerChoice) {
 <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
 ```
 
-###6. Add Some Pizazz!
-Style the site to look better! Winning Stylesheet will be used with
-the next class.
+###6. The customer has some requests
+
+- "I want to play the game again, make a button I can press to play again!"
+
+- "When I win I want the game to congratulate me by name!"
+
+- "This site is ugly, make it not ugly."
+  
 
 ###9. Save, Commit, Push!
 Save your changes, make a commit and push your local changes to github!
