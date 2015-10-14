@@ -3,14 +3,6 @@
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
-    // var reloadButton = document.getElementById("reloadButton")
-    // reloadButton.click(function(){
-    //   window.reload();
-    // });
-
-    function reloadPage() {
-      window.location.reload();
-    };
     var userChoice = prompt("Do you choose rock, paper or scissors?");
 
     var computerChoice = Math.random();
@@ -54,9 +46,6 @@
   <body>
     <div class="wrapper">
       <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
-    <button onclick="reloadPage();">Lets Play RPS again!</button>
-
-
     </div>
   </body>
 
