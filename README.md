@@ -127,8 +127,8 @@ var compare = function(userChoice, computerChoice) {
 
 - "When I win I want the game to congratulate me by name!"
 
-- "This site is ugly, make it not ugly."
-  
+
+
 
 ###9. Save, Commit, Push!
 Save your changes, make a commit and push your local changes to github!
