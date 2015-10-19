@@ -127,7 +127,10 @@ var compare = function(userChoice, computerChoice) {
 
 - "When I win I want the game to congratulate me by name!"
 
+- "I want there to be a sweet background image."
 
+
+###7. Fork, Clone, Implement the features from above
 
 
 ###9. Save, Commit, Push!

@@ -3,6 +3,7 @@
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
+    var userName = prompt("What is your name puny human?");
 
     var userChoice = prompt("Do you choose rock, paper or scissors?");
 
@@ -29,7 +30,7 @@
           }
           else if(userChoice==="paper") {
              if(computerChoice ==="rock") {
-                 window.alert("paper wins!");
+                 window.alert("Paper wins!");
              } else {
                  window.alert("scissors wins!");
              }
@@ -37,7 +38,7 @@
 
           else if(userChoice==="scissors") {
               if (computerChoice==="rock") {
-                  window.alert("scissors wins!");
+                  window.alert("Scissors wins!");
               } else {
                   window.alert("scissors wins");
               }
@@ -48,6 +49,7 @@
   <body>
     <div class="wrapper">
       <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
+      
     </div>
   </body>
 
