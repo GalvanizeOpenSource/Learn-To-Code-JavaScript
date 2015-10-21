@@ -16,15 +16,11 @@ https://www.javascript.com/try
 - functions
 - if statements
 - variables
-- parameters vs arguments
+
 
 
 
 ###Rock Paper Scissors!
-```
-var userChoice = prompt("Do you choose rock, paper or scissors?");
-var computerChoice = Math.random();
-```
 
 We want to write a program called rockPaperScissors.js so we can play rock paper
 scissors with our computer! Here are the steps we'll need to take to make that happen:
@@ -44,6 +40,8 @@ var userChoice = prompt("Do you choose rock, paper or scissors?");
 ```
 
 This line creates a variable called ```userChoice``` to represent the users response.
+
+Question: Why is this a crap way to get the users input?
 
 ###2.Get the computers choice
 ```Math.random()``` returns a random floating point number between 0 and 1
@@ -127,10 +125,7 @@ var compare = function(userChoice, computerChoice) {
 
 - "When I win I want the game to congratulate me by name!"
 
-- "I want there to be a sweet background image."
-
-
-###7. Fork, Clone, Implement the features from above
+- "I don't ever want to loose, make it so I always win."
 
 
 ###9. Save, Commit, Push!
