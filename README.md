@@ -24,25 +24,75 @@ For this workshop, you need to have the following:
 
 Making its first appearance in 1995, JavaScript was created by an engineer at Netscape to provide a user-friendly, lightweight programming language that can be easily adapted for the rise of the Internet. Now, with HTML and CSS, it is one of the core languages of the Internet and is growing quickly to accommodate beyond the client-side.
 
-With JS allows web pages to do more than just “sit there." You can animate, calculate, etc. - you can do it all! 
+JavaScript allows web pages to do more than just “sit there." You can animate, calculate, etc. - you can do it all! 
 It is a great programming bridge between “design” and “development” that allows for endless creativity.
 
-Common confusion: *Java* is NOT *JavaScript*. They are largely different programming languages and should not be confused with one another.
+Common confusion: JavaScript is *NOT* JavaScript. They are largely different programming languages and should not be confused with one another.
 
 ### A Quick Mini-Tutorial
 
-In order to go over some basic JavaScript concepts lets follow the getting
-started tutorial provided by the [JavaScript.com](http://chrome.google.com) team. 
+In order to go over some basic JavaScript concepts, let's follow a tutorial provided by the [JavaScript.com](http://chrome.google.com) team. 
 
 It's only 8 lessons and takes less than 5 minutes.
 
-(https://www.javascript.com/try)
+https://www.javascript.com/try
 
 ### Dive a Little Deeper
 
 Let's review some of the basic syntax of JavaScript.
 
+- `var` - defines a variable (an object of some value)
+- `;` - terminator, commonly found at the end of a code operation
+- `"word"` - quotes create strings, which are a form of data 
+- `function()` - performs some action or method 
+- `{}` - block notation, contains code that can be initialized by a function
+- `.` - dot notation, allows for the chaining of variables and functions
 
+JavaScript is an [Object-Oriented Language](https://en.wikipedia.org/wiki/Object-oriented_programming), a common paradigm of coding that occurs in many other languages and can help you learn them as well.
+
+### Variables
+
+Variables are essentially containers for storing data, values, etc.
+In JavaScript, you must declare them with `var` first, then define them with `=`.
+
+Syntax:
+
+```
+var price1 = 5;
+var price2 = 6;
+var total = price1 + price2;
+```
+
+What is the value of `total`? 
+
+*Variables* can store a variety of data types:
+
+- Strings - `“Hello, my name is Lee.”`
+- Numbers - `40, 0.15`
+- Boolean - `True` or `False`
+- Null - literally nothing
+- “” - undefined value
+- Functions - here we go…!
+
+#### Gut check!
+
+What's the difference between `=`,`==`, and `===`? I see this all the time.
+
+
+`=` is known as the  *assignment operator* - it sets variables equal to a specific value.
+```
+var foo = 1
+```
+`==` is known as the *abstract equality comparison* - it compares two items to see if they are of equal value, but it ignores if they are the same exact ~type~ of data.
+```
+“1” == 1 => True
+Null == undefined => True
+```
+`===` is known as the *strict equality comparison* it compares the value & type of the items to see if they are exactly the same. In the case of null vs undefined, null is more specifically typed than undefined, so they are not exactly the same value.
+```
+“1” === 1 => False
+Null === undefined => False
+```
 
 ###HOORAY VOCABULARY!
 
