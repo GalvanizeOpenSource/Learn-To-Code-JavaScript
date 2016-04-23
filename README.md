@@ -81,11 +81,11 @@ What's the difference between `=`,`==`, and `===`? I see this all the time.
 
 #####`=` is known as the  **assignment operator**
 It sets variables equal to a specific value.
-```
+```javascript
 var foo = 1
 ```
 ##### `==` is known as the **abstract equality comparison**
-It compares two items to see if they are of equal value, but it ignores if they are the same exact ~type~ of data.
+It compares two items to see if they are of equal value, but it ignores if they are the same exact _type_ of data.
 ```
 “1” == 1 => True
 Null == undefined => True
@@ -104,7 +104,7 @@ Functions are blocks of code that perform tasks for us.
 In JavaScript, you follow the general syntax: 1) declare, 2) define, 3) call (invoke).
 
 Syntax:
-```
+```javascript
 var multiply = function(a,b){
 return a * b
 };
@@ -130,7 +130,7 @@ Conditional statements work a lot like them and follow the basic format: *if*, *
 **if** - if what’s in the parameters is `True`, then a block of code will run.
 If it’s `False`, the code will not run.
 
-```
+```javascript
 if (hour < 18) {
 	greeting = "Good day";
 }
@@ -142,7 +142,7 @@ if statements by themselves default to `True`.
 
 **else** - what if you wanted the code to do something else besides nothing if it’s False?
 
-```
+```javascript
 if (hour < 18) {
 	greeting = "Good day";
 } else 
@@ -155,7 +155,7 @@ if (hour < 18) {
 **else if** - What if another scenario comes up? 
 
 Add an `else if` in between the `if` and `else` statements.
-```
+```javascript
 if (hour < 18) 
 {greeting = "Good day";} 
 else if (hour < 9) 
@@ -174,17 +174,24 @@ _Is there any other way to do this?_
 
 Time for us to make our *Rock, Paper, Scissors* application!
 
-We want to write a program called rockPaperScissors.js so we can play rock paper
-scissors with our computer! Here are the steps we'll need to take to make that happen:
+1. Go to: https://github.com/GalvanizeOpenSource/Learn-To-Code-JavaScript/
+2. Download the zip file of our code
+3. Open the files in your text editor
+	4. index.html
+	5. CSS/style.css
+6. Open the index.html file in your web browser
 
-1. Get a user's choice
-1. Get the computer's choice
-1. Teach the computer how to guess rock, paper, or scissors
-1. Compare their choices and tell the user the result
+#### 4 Steps To Building This App
+
+1. Get the user's choice
+2. Get the computer's choice
+3. Teach the computer how to guess rock, paper, or scissors
+4. Compare their choices and tell the user the result
 
 
-###1.Get the user's choice
+###### 1. Get the user's choice
 
+**Assign a `prompt` method to the variable `userChoice`:**
 The ```prompt``` method gets input from the user, ```prompt``` has an optional message parameter which you can use to ask the user for a response.
 
 ```javascript
@@ -193,24 +200,34 @@ var userChoice = prompt("Do you choose rock, paper or scissors?");
 
 This line creates a variable called ```userChoice``` to represent the users response.
 
-Question: Why is this a crap way to get the users input?
+Question: _Why is this a terrible way to get user input?_
 
-###2.Get the computers choice
-```Math.random()``` returns a random floating point number between 0 and 1
+
+###### 2. Get the computer's choice
+
+Assign a `Math.random()` method to the variable `computerChoice`:
+
+What is `Math` in JavaScript?
+
+```Math.random()``` returns a random floating point number between 0 and 1.
 
 ```javascript
 var computerChoice = Math.random();
 ```
 
-Here we are setting a variable named ```computerChoice``` to the result of Math.random()
+Here we are setting a variable named ```computerChoice``` to the result of `Math.random()`.
 
+Question: _How else can we get a random choice?_
 
-###3. Teach the computer rock, paper, scissors.
+###### 3. Teach the computer rock, paper, scissors.
 
-This is our first conditional statement. We change the value of ```computerChoice```
+This is our first conditional statement. 
+
+We change the value of ```computerChoice```
 to either rock, paper, or scissors depending on what number the ```computerChoice```
-variable gets set to when we run the program. Computers don't speak english so
-we need to speak in a language they understand, numbers.
+variable gets set to when we run the program. 
+
+Computers don't speak English (well, not exactly), so we need to speak in a language they understand: numbers.
 
 ```javascript
 
@@ -223,16 +240,14 @@ if (computerChoice <= 0.33) {
 }
 ```
 
+At this point the computer is ready to rumble with it's choice, and the user has made theirs. 
+
+**IT'S GO TIME!!! (Not so fast, bub.)**
+First we need to tell the computer how to decide who wins. 
+In order to do that, we're going to need to create a function!
 
 
-//At this point the computer is ready to rumble with it's choice, and the user
-//has made theirs. IT'S GO TIME!!!
-//Not so fast bub, first we need to tell the computer how to decide who wins. In
-//order to do that we're going to need to create a function!
-
-
-
-###4. Compare the choices and tell the user of the result.
+###### 4. Compare the choices and tell the user of the result.
 Here we're creating a function called ```compare```. The ```compare``` function takes two
 arguments ```choice1``` and ```choice2```.
 
@@ -263,9 +278,10 @@ var compare = function(userChoice, computerChoice) {
 ```
 
 
-###5. Calling the compare function
- We're passing values of userChoice and computerChoice to run the equation. The
- function is called when someone clicks the button via the ```onclick``` attribute!
+###### 4.5 Calling the compare function
+We're passing values of userChoice and computerChoice to run the equation. 
+
+The function is called when someone clicks the button via the ```onclick``` attribute!
 
 ```html
 <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
@@ -279,10 +295,33 @@ var compare = function(userChoice, computerChoice) {
 - "I want the JavaScript code to work on other HTML files. How do I do this?"
 
 
-About the Authors
+## YOU DID IT, YOU'RE NOW A JAVASCRIPT CODER!
 
-Graham McBain is a graduate of the 3rd cohort of the Galvanzie Full Stack Program and now Evangelist for Galvanize based in the Colorado area. Graham believes that programming is more accessible than people think and is passionate about showing people the path to becoming a developer.
+Want to learn more? Visit one of our nearby **Learn to Code** sessions or check out our other tutorials:
 
-Lee Ngo is an evangelist for Galvanize based in Seattle. Previously he worked for UP Global (now Techstars) and founded his own ed-tech company in Pittsburgh, PA. Lee believes in learning by doing, engaging and sharing, and he teaches code through a combination of visual communication, teamwork, and project-oriented learning.
+- [Learn to Code HTML & CSS](https://github.com/GalvanizeOpenSource/Learn-To-Code-HTML-CSS)
+- [Learn to Code Git and GitHub](https://github.com/GalvanizeOpenSource/Learn-To-Code-GitHub-Git)
+
+You can also check out our evening courses at [galvanize.com/workshops](http://galvanize.com/workshops):
+
+- **Zero to Web Designer in 8 Weeks**
+- **Foundations in JavaScript in 8 Weeks**
+
+If you're ready for a full-fledged immersive program, Galvanize offers the following:
+
+**Galvanize Full Stack Immersive Program**
+- 24 Week Full-Time Program
+- 97% Job Placement Rate within six months
+- Average starting salary: $77,000 per annum
+- Scholarships available for those who qualify
+
+To learn more, email our enrollment department at enrollment@galvanize.com.
+
+
+## About the Authors
+
+**Graham McBain** is a graduate of the 3rd cohort of the Galvanzie Full Stack Program and now Evangelist for Galvanize based in the Colorado area. Graham believes that programming is more accessible than people think and is passionate about showing people the path to becoming a developer.
+
+**Lee Ngo** is an evangelist for Galvanize based in Seattle. Previously he worked for UP Global (now Techstars) and founded his own ed-tech company in Pittsburgh, PA. Lee believes in learning by doing, engaging and sharing, and he teaches code through a combination of visual communication, teamwork, and project-oriented learning.
 
 You can email him at lee.ngo@galvanize.com for any further questions.
