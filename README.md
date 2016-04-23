@@ -1,14 +1,47 @@
-# Learn-to-code-week-2
+# Learn to Code JavaScript!
 
-Basic JavaScript and jQuery
+Brought to you by Galvanize. Learn more about the way we teach code at [galvanize.com](http://galvanize.com).
+
+### Overview
+
+In this course, we'll be going over the following!
+
+- Basic syntax of JavaScript
+- Variables and Functions
+- Conditional statements (if, else if, else)
+- Build a “Rock, Paper, Scissors” application
+
+While not required, reviewing our [HTML & CSS](https://github.com/GalvanizeOpenSource/Learn-To-Code-HTML-CSS) course can help!
+
+### Setting Up Your Computer
+
+For this workshop, you need to have the following:
+
+- Install a text editor! We recommend [Atom.io](http://atom.io)
+- Have an updated web browser! We recommend [Google Chrome](http://chrome.google.com)
+
+### What IS JavaScript?
+
+Making its first appearance in 1995, JavaScript was created by an engineer at Netscape to provide a user-friendly, lightweight programming language that can be easily adapted for the rise of the Internet. Now, with HTML and CSS, it is one of the core languages of the Internet and is growing quickly to accommodate beyond the client-side.
+
+With JS allows web pages to do more than just “sit there." You can animate, calculate, etc. - you can do it all! 
+It is a great programming bridge between “design” and “development” that allows for endless creativity.
+
+Common confusion: *Java* is NOT *JavaScript*. They are largely different programming languages and should not be confused with one another.
+
+### A Quick Mini-Tutorial
 
 In order to go over some basic JavaScript concepts lets follow the getting
-started tutorial provided by the JavaScript team. It's only 8 lessons and takes
-less than 5 minutes.
+started tutorial provided by the [JavaScript.com](http://chrome.google.com) team. 
 
+It's only 8 lessons and takes less than 5 minutes.
 
-###Lets Give JavaScript a try!
-https://www.javascript.com/try
+(https://www.javascript.com/try)
+
+### Dive a Little Deeper
+
+Let's review some of the basic syntax of JavaScript.
+
 
 
 ###HOORAY VOCABULARY!
@@ -119,14 +152,18 @@ var compare = function(userChoice, computerChoice) {
 <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
 ```
 
-###6. The customer has some requests
+### Play around in the sandbox some more!
 
-- "I want to play the game again, make a button I can press to play again!"
+- "I want to play the game again. Make a button I can press to play again!"
+- "When I win, I want the game to congratulate me by my name!"
+- "I don't ever want to lose. Make it so I always win."
+- "I want the JavaScript code to work on other HTML files. How do I do this?"
 
-- "When I win I want the game to congratulate me by name!"
 
-- "I don't ever want to loose, make it so I always win."
+About the Authors
 
+Graham McBain is a graduate of the 3rd cohort of the Galvanzie Full Stack Program and now Evangelist for Galvanize based in the Colorado area. Graham believes that programming is more accessible than people think and is passionate about showing people the path to becoming a developer.
 
-###9. Save, Commit, Push!
-Save your changes, make a commit and push your local changes to github!
+Lee Ngo is an evangelist for Galvanize based in Seattle. Previously he worked for UP Global (now Techstars) and founded his own ed-tech company in Pittsburgh, PA. Lee believes in learning by doing, engaging and sharing, and he teaches code through a combination of visual communication, teamwork, and project-oriented learning.
+
+You can email him at lee.ngo@galvanize.com for any further questions.
