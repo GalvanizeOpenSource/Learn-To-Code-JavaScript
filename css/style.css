@@ -1,3 +1,10 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
 .wrapper {
     text-align: center;
 }
