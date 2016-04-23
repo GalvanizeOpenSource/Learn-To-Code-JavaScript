@@ -79,31 +79,100 @@ What is the value of `total`?
 What's the difference between `=`,`==`, and `===`? I see this all the time.
 
 
-`=` is known as the  *assignment operator* - it sets variables equal to a specific value.
+#####`=` is known as the  *assignment operator*
+It sets variables equal to a specific value.
 ```
 var foo = 1
 ```
-`==` is known as the *abstract equality comparison* - it compares two items to see if they are of equal value, but it ignores if they are the same exact ~type~ of data.
+##### `==` is known as the *abstract equality comparison*
+It compares two items to see if they are of equal value, but it ignores if they are the same exact ~type~ of data.
 ```
 “1” == 1 => True
 Null == undefined => True
 ```
-`===` is known as the *strict equality comparison* it compares the value & type of the items to see if they are exactly the same. In the case of null vs undefined, null is more specifically typed than undefined, so they are not exactly the same value.
+##### `===` is known as the *strict equality comparison*
+It compares the value & type of the items to see if they are exactly the same. In the case of null vs undefined, null is more specifically typed than undefined, so they are not exactly the same value.
 ```
 “1” === 1 => False
 Null === undefined => False
 ```
 
-###HOORAY VOCABULARY!
+### Functions
 
-- functions
-- if statements
-- variables
+Functions are blocks of code that perform tasks for us.
+
+In JavaScript, you follow the general syntax: 1) declare, 2) define, 3) call (invoke).
+
+Syntax:
+```
+var multiply = function(a,b){
+return a * b
+};
+multiply(2,4);
+```
+~What is the value produced by this function?
+
+###### More on the syntax of functions:
+- *Parameters* - `(a,b,c)` - hypothetically what passes through the function
+- *Arguments* - real values of the parameters the function affects
+- *Block* - `{...}` - the function’s operational code
+- *Return* command - the output of the function
 
 
+### Conditional Statements
+
+Remember [Choose Your Own Adventure](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure) books? 
+
+Conditional statements work a lot like them and follow the basic format: *if*, *else*, *else if*...
+
+###### If Statements
+
+*if* - if what’s in the parameters is `True`, then a block of code will run.
+If it’s `False`, the code will not run.
+
+```
+if (hour < 18) {
+	greeting = "Good day";
+}
+```
+if statements by themselves default to `True`.
 
 
-###Rock Paper Scissors!
+###### Else Statements
+
+*else* - what if you wanted the code to do something else besides nothing if it’s False?
+
+```
+if (hour < 18) {
+	greeting = "Good day";
+} else 
+	{ greeting = “Go away.”;
+}
+```
+
+###### Else if Statements
+
+*else if* - What if another scenario comes up? 
+
+Add an `else if` in between the `if` and `else` statements.
+```
+if (hour < 18) 
+{greeting = "Good day";} 
+else if (hour < 9) 
+{greeting = “OK day”;}
+else {greeting = “Go away.”;}
+```
+##### Recap of Conditional Rules
+
+- *If* statements perform an action if the statement is True
+- *Else* statements perform an action if the statement is False
+- *Else if* statements perform an action if the first is False but the second is True
+~Is there anyone way to do this?~
+
+
+## LET'S CODE
+
+Time for us to make our *Rock, Paper, Scissors* application!
 
 We want to write a program called rockPaperScissors.js so we can play rock paper
 scissors with our computer! Here are the steps we'll need to take to make that happen:
