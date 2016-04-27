@@ -162,6 +162,8 @@ else if (hour < 9)
 {greeting = “OK day”;}
 else {greeting = “Go away.”;}
 ```
+_This code is actually broken. Can you figure out why?_
+
 ##### Recap of Conditional Rules
 
 - **If** statements perform an action if the statement is True
