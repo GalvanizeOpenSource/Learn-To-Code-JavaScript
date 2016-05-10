@@ -251,7 +251,7 @@ In order to do that, we're going to need to create a function!
 
 ###### 4. Compare the choices and tell the user of the result.
 Here we're creating a function called ```compare```. The ```compare``` function takes two
-arguments ```choice1``` and ```choice2```.
+arguments ```userChoice``` and ```computerChoice```.
 
 ```javascript
 var compare = function(userChoice, computerChoice) {
