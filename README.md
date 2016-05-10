@@ -24,14 +24,14 @@ For this workshop, you need to have the following:
 
 Making its first appearance in 1995, JavaScript was created by an engineer at Netscape to provide a user-friendly, lightweight programming language that can be easily adapted for the rise of the Internet. Now, with HTML and CSS, it is one of the core languages of the Internet and is growing quickly to accommodate beyond the client-side.
 
-JavaScript allows web pages to do more than just “sit there." You can animate, calculate, etc. - you can do it all! 
+JavaScript allows web pages to do more than just “sit there." You can animate, calculate, etc. - you can do it all!
 It is a great programming bridge between “design” and “development” that allows for endless creativity.
 
 Common confusion: JavaScript is **NOT** JavaScript. They are largely different programming languages and should not be confused with one another.
 
 ### A Quick Mini-Tutorial
 
-In order to go over some basic JavaScript concepts, let's follow a tutorial provided by the [JavaScript.com](http://chrome.google.com) team. 
+In order to go over some basic JavaScript concepts, let's follow a tutorial provided by the [JavaScript.com](http://chrome.google.com) team.
 
 It's only 8 lessons and takes less than 5 minutes.
 
@@ -43,8 +43,8 @@ Let's review some of the basic syntax of JavaScript.
 
 - `var` - defines a variable (an object of some value)
 - `;` - terminator, commonly found at the end of a code operation
-- `"word"` - quotes create strings, which are a form of data 
-- `function()` - performs some action or method 
+- `"word"` - quotes create strings, which are a form of data
+- `function()` - performs some action or method
 - `{}` - block notation, contains code that can be initialized by a function
 - `.` - dot notation, allows for the chaining of variables and functions
 
@@ -63,7 +63,7 @@ var price2 = 6;
 var total = price1 + price2;
 ```
 
-What is the value of `total`? 
+What is the value of `total`?
 
 **Variables** can store a variety of data types:
 
@@ -121,7 +121,7 @@ multiply(2,4);
 
 ### Conditional Statements
 
-Remember [Choose Your Own Adventure](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure) books? 
+Remember [Choose Your Own Adventure](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure) books?
 
 Conditional statements work a lot like them and follow the basic format: *if*, *else*, *else if*...
 
@@ -145,20 +145,20 @@ if statements by themselves default to `True`.
 ```javascript
 if (hour < 18) {
 	greeting = "Good day";
-} else 
+} else
 	{ greeting = “Go away.”;
 }
 ```
 
 ###### Else if Statements
 
-**else if** - What if another scenario comes up? 
+**else if** - What if another scenario comes up?
 
 Add an `else if` in between the `if` and `else` statements.
 ```javascript
-if (hour < 18) 
-{greeting = "Good day";} 
-else if (hour < 9) 
+if (hour < 18)
+{greeting = "Good day";}
+else if (hour < 9)
 {greeting = “OK day”;}
 else {greeting = “Go away.”;}
 ```
@@ -177,18 +177,19 @@ _Is there any other way to do this?_
 Time for us to make our *Rock, Paper, Scissors* application!
 
 1. Go to: https://github.com/GalvanizeOpenSource/Learn-To-Code-JavaScript/
-2. Download the zip file of our code
-3. Open the files in your text editor
-	4. index.html
-	5. CSS/style.css
-6. Open the index.html file in your web browser
+1. Download the zip file of our code
+1. Open the files in your text editor
+	a. index.html
+	b. CSS/style.css
+1. Open the index.html file in your web browser
 
-#### 4 Steps To Building This App
+#### 5 Steps To Building This App
 
-1. Get the user's choice
-2. Get the computer's choice
-3. Teach the computer how to guess rock, paper, or scissors
-4. Compare their choices and tell the user the result
+1. Get the user's name
+1. Get the user's throw: either rock, paper, or scissors
+1. Have the computer generate a random number between 0-1.
+1. Use a conditional statement to assign rock, paper, and scissors to the computer's random number
+1. Compare the user's throw and the computer's throw, and tell the user who won
 
 
 ###### 1. Get the user's choice
@@ -202,7 +203,6 @@ var userChoice = prompt("Do you choose rock, paper or scissors?");
 
 This line creates a variable called ```userChoice``` to represent the users response.
 
-Question: _Why is this a terrible way to get user input?_
 
 
 ###### 2. Get the computer's choice
@@ -219,15 +219,14 @@ var computerChoice = Math.random();
 
 Here we are setting a variable named ```computerChoice``` to the result of `Math.random()`.
 
-Question: _How else can we get a random choice?_
 
 ###### 3. Teach the computer rock, paper, scissors.
 
-This is our first conditional statement. 
+This is our first conditional statement.
 
 We change the value of ```computerChoice```
 to either rock, paper, or scissors depending on what number the ```computerChoice```
-variable gets set to when we run the program. 
+variable gets set to when we run the program.
 
 Computers don't speak English (well, not exactly), so we need to speak in a language they understand: numbers.
 
@@ -242,10 +241,11 @@ if (computerChoice <= 0.33) {
 }
 ```
 
-At this point the computer is ready to rumble with it's choice, and the user has made theirs. 
+At this point the computer is ready to rumble with it's choice, and the user has made theirs.
 
-**IT'S GO TIME!!! (Not so fast, bub.)**
-First we need to tell the computer how to decide who wins. 
+**IT'S GO TIME!!!**
+
+First we need to tell the computer how to decide who wins.
 In order to do that, we're going to need to create a function!
 
 
@@ -281,7 +281,7 @@ var compare = function(userChoice, computerChoice) {
 
 
 ###### 4.5 Calling the compare function
-We're passing values of userChoice and computerChoice to run the equation. 
+We're passing values of userChoice and computerChoice to run the equation.
 
 The function is called when someone clicks the button via the ```onclick``` attribute!
 
