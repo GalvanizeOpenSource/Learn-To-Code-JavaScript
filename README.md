@@ -2,9 +2,9 @@
 
 Brought to you by Galvanize. Learn more about the way we teach code at [galvanize.com](http://galvanize.com).
 
-### Overview
+### Learning Objectives
 
-In this course, we'll be going over the following!
+By the end of this workshop, you will be able to...
 
 - Basic syntax of JavaScript
 - Variables and Functions
