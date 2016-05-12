@@ -1,3 +1,5 @@
+// Note: place this solution in between the <script></script> tags in your index.html file
+
 // <!-- get the user's name -->
 var userName = prompt("What is your name?");
 
@@ -5,7 +7,7 @@ var userName = prompt("What is your name?");
 
 var userThrow = prompt("Rock, Paper, or Scissors?")
 
-<!-- Have the computer generate a random number between 0-1. -->
+// Have the computer generate a random number between 0-1.
 var randomNum = Math.random();
 
 var computerThrow = " ";
