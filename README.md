@@ -2,14 +2,22 @@
 
 Brought to you by Galvanize. Learn more about the way we teach code at [galvanize.com](http://galvanize.com).
 
-### Overview
+### Learning Objectives
 
-In this course, we'll be going over the following!
+By the end of this workshop, you will be able to...
 
-- Basic syntax of JavaScript
-- Variables and Functions
-- Conditional statements (if, else if, else)
-- Build a “Rock, Paper, Scissors” application
+- Write JavaScript code in a text editor
+- Explore code using Chrome Developer Tools
+- Describe and use the following primitive data types:
+	- Strings
+	- Numbers
+	- Booleans
+- Describe and use the following operators:
+	- Assignment
+	- Comparison
+- Write a JavaScript function
+- Use a conditional statement to control the flow of a program
+- Build a “Rock, Paper, Scissors” application using primitive data types, operations, functions and conditional statements
 
 While not required, reviewing our [HTML & CSS](https://github.com/GalvanizeOpenSource/Learn-To-Code-HTML-CSS) course can help!
 
@@ -24,14 +32,14 @@ For this workshop, you need to have the following:
 
 Making its first appearance in 1995, JavaScript was created by an engineer at Netscape to provide a user-friendly, lightweight programming language that can be easily adapted for the rise of the Internet. Now, with HTML and CSS, it is one of the core languages of the Internet and is growing quickly to accommodate beyond the client-side.
 
-JavaScript allows web pages to do more than just “sit there." You can animate, calculate, etc. - you can do it all! 
+JavaScript allows web pages to do more than just “sit there." You can animate, calculate, etc. - you can do it all!
 It is a great programming bridge between “design” and “development” that allows for endless creativity.
 
-Common confusion: JavaScript is **NOT** JavaScript. They are largely different programming languages and should not be confused with one another.
+Common confusion: JavaScript is **NOT** Java. They are largely different programming languages and should not be confused with one another.
 
 ### A Quick Mini-Tutorial
 
-In order to go over some basic JavaScript concepts, let's follow a tutorial provided by the [JavaScript.com](http://chrome.google.com) team. 
+In order to go over some basic JavaScript concepts, let's follow a tutorial provided by the [JavaScript.com](http://chrome.google.com) team.
 
 It's only 8 lessons and takes less than 5 minutes.
 
@@ -43,8 +51,8 @@ Let's review some of the basic syntax of JavaScript.
 
 - `var` - defines a variable (an object of some value)
 - `;` - terminator, commonly found at the end of a code operation
-- `"word"` - quotes create strings, which are a form of data 
-- `function()` - performs some action or method 
+- `"word"` - quotes create strings, which are a form of data
+- `function()` - performs some action or method
 - `{}` - block notation, contains code that can be initialized by a function
 - `.` - dot notation, allows for the chaining of variables and functions
 
@@ -63,7 +71,7 @@ var price2 = 6;
 var total = price1 + price2;
 ```
 
-What is the value of `total`? 
+What is the value of `total`?
 
 **Variables** can store a variety of data types:
 
@@ -74,9 +82,9 @@ What is the value of `total`?
 - “” - undefined value
 - Functions - here we go…!
 
-#### Gut check!
+#### Check for Understanding!
 
-What's the difference between `=`,`==`, and `===`? I see this all the time.
+What's the difference between `=`,`==`, and `===`?
 
 
 #####`=` is known as the  **assignment operator**
@@ -121,7 +129,7 @@ multiply(2,4);
 
 ### Conditional Statements
 
-Remember [Choose Your Own Adventure](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure) books? 
+Remember [Choose Your Own Adventure](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure) books?
 
 Conditional statements work a lot like them and follow the basic format: *if*, *else*, *else if*...
 
@@ -135,7 +143,7 @@ if (hour < 18) {
 	greeting = "Good day";
 }
 ```
-if statements by themselves default to `True`.
+if statements by themselves default to `true`.
 
 
 ###### Else Statements
@@ -145,20 +153,20 @@ if statements by themselves default to `True`.
 ```javascript
 if (hour < 18) {
 	greeting = "Good day";
-} else 
+} else
 	{ greeting = “Go away.”;
 }
 ```
 
 ###### Else if Statements
 
-**else if** - What if another scenario comes up? 
+**else if** - What if another scenario comes up?
 
 Add an `else if` in between the `if` and `else` statements.
 ```javascript
-if (hour < 18) 
-{greeting = "Good day";} 
-else if (hour < 9) 
+if (hour < 18)
+{greeting = "Good day";}
+else if (hour < 9)
 {greeting = “OK day”;}
 else {greeting = “Go away.”;}
 ```
@@ -177,116 +185,120 @@ _Is there any other way to do this?_
 Time for us to make our *Rock, Paper, Scissors* application!
 
 1. Go to: https://github.com/GalvanizeOpenSource/Learn-To-Code-JavaScript/
-2. Download the zip file of our code
-3. Open the files in your text editor
-	4. index.html
-	5. CSS/style.css
-6. Open the index.html file in your web browser
+1. Download the zip file of our code
+1. Open the files in your text editor
+	a. index.html
+	b. CSS/style.css
+1. Open the index.html file in your web browser
 
-#### 4 Steps To Building This App
+#### 5 Steps To Building This App
 
-1. Get the user's choice
-2. Get the computer's choice
-3. Teach the computer how to guess rock, paper, or scissors
-4. Compare their choices and tell the user the result
+1. Get the user's name
+1. Get the user's throw: either rock, paper, or scissors
+1. Have the computer generate a random number between 0.01-0.99.
+1. Use a conditional statement to assign rock, paper, and scissors to the computer's random number
+1. Compare the user's throw and the computer's throw, and tell the user who won
 
 
-###### 1. Get the user's choice
+###### 1. Get the user's name
 
-**Assign a `prompt` method to the variable `userChoice`:**
+**Assign a `prompt` method to the variable `userName`:**
 The ```prompt``` method gets input from the user, ```prompt``` has an optional message parameter which you can use to ask the user for a response.
 
 ```javascript
-var userChoice = prompt("Do you choose rock, paper or scissors?");
+var userName = prompt("What is your name?");
 ```
 
-This line creates a variable called ```userChoice``` to represent the users response.
+###### 2. Get the user's throw: either rock, paper, or scissors
 
-Question: _Why is this a terrible way to get user input?_
+**Assign a `prompt` method to the variable `userThrow`:**
 
 
-###### 2. Get the computer's choice
+```javascript
+var userThrow = prompt("rock, paper or scissors?");
+```
 
-Assign a `Math.random()` method to the variable `computerChoice`:
+This line creates a variable called ```userThrow``` to represent the users response.
+
+
+
+###### 3. 1. Have the computer generate a random number between 0-1.
+
+Assign a `Math.random()` method to the variable `randomNum`:
 
 What is `Math` in JavaScript?
 
 ```Math.random()``` returns a random floating point number between 0 and 1.
 
 ```javascript
-var computerChoice = Math.random();
+var randomNum = Math.random();
 ```
 
-Here we are setting a variable named ```computerChoice``` to the result of `Math.random()`.
+Here we are setting a variable named ```randomNum``` to the result of `Math.random()`.
 
-Question: _How else can we get a random choice?_
 
-###### 3. Teach the computer rock, paper, scissors.
+###### 4. 1. Use a conditional statement to assign a throw of either rock, paper, and scissors to the computer's random number
 
-This is our first conditional statement. 
+This is our first conditional statement.
 
-We change the value of ```computerChoice```
-to either rock, paper, or scissors depending on what number the ```computerChoice```
-variable gets set to when we run the program. 
+We assign the value of ```computerThrow```
+to either rock, paper, or scissors depending on what number the ```randomNum```
+variable gets set to when we run the program.
 
 Computers don't speak English (well, not exactly), so we need to speak in a language they understand: numbers.
 
 ```javascript
-
-if (computerChoice <= 0.33) {
-    computerChoice = "rock";
-} else if (computerChoice <= 0.66) {
-    computerChoice = "paper";
-} else {
-    computerChoice = "scissors";
-}
+  if (randomNum <= 0.33) {
+    computerThrow = "rock";
+  } else if (randomNum <= 0.66) {
+    computerThrow = "paper";
+  } else {
+    computerThrow = "scissors";
+  }
 ```
 
-At this point the computer is ready to rumble with it's choice, and the user has made theirs. 
-
-**IT'S GO TIME!!! (Not so fast, bub.)**
-First we need to tell the computer how to decide who wins. 
-In order to do that, we're going to need to create a function!
+At this point the computer is ready to rumble with it's choice, and the user has made theirs.
 
 
-###### 4. Compare the choices and tell the user of the result.
+###### 5.  Compare the user's throw and the computer's throw, and tell the user who won
+
 Here we're creating a function called ```compare```. The ```compare``` function takes two
-arguments ```choice1``` and ```choice2```.
+arguments ```userThrow``` and ```computerThrow```.
 
 ```javascript
-var compare = function(userChoice, computerChoice) {
-    if (userChoice  === computerChoice) {
-        window.alert("The result is a tie!");
-    } else if(userChoice === "rock") {
-        if (computerChoice === "scissors") {
-            window.alert("Rock wins!");
-        } else {
-            window.alert("Paper wins");
-        }
-    } else if(userChoice === "paper") {
-        if(computerChoice === "rock") {
-            window.alert("paper wins!");
-        } else {
-            window.alert("scissors wins!");
-        }
-    } else if(userChoice === "scissors") {
-        if (computerChoice === "rock") {
-            window.alert("Rock wins");
-        } else {
-            window.alert("scissors wins");
-        }
+  var compare = function (userThrow, computerThrow) {
+    if (userThrow === computerThrow) {
+      window.alert("The result is a tie!")
+    } else if (userThrow === "rock") {
+      if(computerThrow === "scissors"){
+        window.alert("Rock beats scissors! " + userName + " wins!")
+      } else {
+        window.alert("Paper beats rock! The computer wins!")
+      }
+    } else if (userThrow === "paper") {
+      if(computerThrow === "scissors") {
+        window.alert("Scissors beats paper! The computer wins!")
+      } else if (computerThrow === "rock") {
+        window.alert("Paper beats rock!" + userName + " wins!")
+      }
+    } else if (userThrow === "paper") {
+      if(computerThrow === "rock") {
+        window.alert("Paper beats rock! " + userName + " wins!")
+      } else if (computerThrow === "scissors") {
+        window.alert("Scissors beats paper! The computer wins!")
+      }
     }
-};
+  };
 ```
 
 
-###### 4.5 Calling the compare function
-We're passing values of userChoice and computerChoice to run the equation. 
+###### 6 Call the compare function
+We're passing values of userChoice and computerChoice to run the equation.
 
 The function is called when someone clicks the button via the ```onclick``` attribute!
 
 ```html
-<button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
+<button class="button" onclick="compare(userThrow, computerThrow);">LETS PLAY RPS!</button>
 ```
 
 ### Play around in the sandbox some more!
