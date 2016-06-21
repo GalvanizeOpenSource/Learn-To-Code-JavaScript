@@ -3,54 +3,14 @@
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
-    var userName = prompt("What is your name, puny human?");
-
-    var userChoice = prompt("Do you choose rock, paper, or scissors?");
-
-    var computerChoice = Math.random();
-
-    if (computerChoice <= 0.33) {
-        computerChoice = "rock";
-    } else if (computerChoice <= 0.66) {
-        computerChoice = "paper";
-    } else {
-        computerChoice = "scissors";
-    }
-
-    var compare = function(userChoice, computerChoice) {
-        if (userChoice  === computerChoice) {
-              window.alert("The result is a tie!");
-          } else if(userChoice ==="rock") {
-            if (computerChoice==="scissors") {
-
-                window.alert("Rock wins!");
-          } else {
-                window.alert("Paper wins");
-              }
-          }
-          else if(userChoice==="paper") {
-             if(computerChoice ==="rock") {
-                 window.alert("Paper wins!");
-             } else {
-                 window.alert("scissors wins!");
-             }
-          }
-
-          else if(userChoice==="scissors") {
-              if (computerChoice==="rock") {
-                  window.alert("Scissors wins!");
-              } else {
-                  window.alert("scissors wins");
-              }
-          }
-      };
+      <!-- put your JavaScript code here for now -->
     </script>
   </head>
   <body>
     <h1>Learn to Code JavaScript</h1>
     <h4>If you see a white button below, you're in good shape!</h4>
     <div class="wrapper">
-      <button class="button" onclick="compare(userChoice, computerChoice);">LET'S PLAY Rock, Paper, Scissors!</button>
+      <!-- put your JavaScript button here! -->
     </div>
     <div>
     <h3>Brought to you by your friends at <a href="http://galvanize.com">Galvanize</a>.</h3>
