@@ -27,7 +27,7 @@ Making its first appearance in 1995, JavaScript was created by an engineer at Ne
 JavaScript allows web pages to do more than just “sit there." You can animate, calculate, etc. - you can do it all! 
 It is a great programming bridge between “design” and “development” that allows for endless creativity.
 
-Common confusion: JavaScript is **NOT** JavaScript. They are largely different programming languages and should not be confused with one another.
+Common confusion: JavaScript is **NOT** Java. They are largely different programming languages and should not be confused with one another.
 
 ### A Quick Mini-Tutorial
 
