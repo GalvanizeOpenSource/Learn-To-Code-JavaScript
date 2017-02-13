@@ -316,26 +316,17 @@ Want to learn more? Visit one of our nearby **Learn to Code** sessions or check 
 - [Learn to Code HTML & CSS](https://github.com/GalvanizeOpenSource/Learn-To-Code-HTML-CSS)
 - [Learn to Code Git and GitHub](https://github.com/GalvanizeOpenSource/Learn-To-Code-GitHub-Git)
 
-You can also check out our evening courses at [galvanize.com/workshops](http://galvanize.com/workshops):
+You can also check out our part-time courses at [galvanize.com/workshops](http://galvanize.com/workshops):
 
-- **Zero to Web Designer in 8 Weeks**
-- **Foundations in JavaScript in 8 Weeks**
+- **Web Development Foundations with JavaScript**
+- **Data Science Fundamentals: Intro to Python**
 
 If you're ready for a full-fledged immersive program, Galvanize offers the following:
 
-**Galvanize Full Stack Immersive Program**
+**Galvanize Web Development Immersive Program**
 - 24 Week Full-Time Program
 - 97% Job Placement Rate within six months
 - Average starting salary: $77,000 per annum
 - Scholarships available for those who qualify
 
 To learn more, email our enrollment department at enrollment@galvanize.com.
-
-
-## About the Authors
-
-**Graham McBain** is a graduate of the 3rd cohort of the Galvanzie Full Stack Program and now Evangelist for Galvanize based in the Colorado area. Graham believes that programming is more accessible than people think and is passionate about showing people the path to becoming a developer.
-
-**Lee Ngo** is an evangelist for Galvanize based in Seattle. Previously he worked for UP Global (now Techstars) and founded his own ed-tech company in Pittsburgh, PA. Lee believes in learning by doing, engaging and sharing, and he teaches code through a combination of visual communication, teamwork, and project-oriented learning.
-
-You can email him at lee.ngo@galvanize.com for any further questions.
