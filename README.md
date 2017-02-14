@@ -215,7 +215,7 @@ var userName = prompt("What is your name?");
 
 
 ```javascript
-var userThrow = prompt("rock, paper or scissors?");
+var userThrow = prompt("Rock, Paper or Scissors?");
 ```
 
 This line creates a variable called ```userThrow``` to represent the users response.
@@ -266,29 +266,31 @@ Here we're creating a function called ```compare```. The ```compare``` function 
 arguments ```userThrow``` and ```computerThrow```.
 
 ```javascript
-  var compare = function (userThrow, computerThrow) {
-    if (userThrow === computerThrow) {
-      window.alert("The result is a tie!")
-    } else if (userThrow === "rock") {
-      if(computerThrow === "scissors"){
-        window.alert("Rock beats scissors! " + userName + " wins!")
-      } else {
-        window.alert("Paper beats rock! The computer wins!")
-      }
-    } else if (userThrow === "paper") {
-      if(computerThrow === "scissors") {
-        window.alert("Scissors beats paper! The computer wins!")
-      } else if (computerThrow === "rock") {
-        window.alert("Paper beats rock!" + userName + " wins!")
-      }
-    } else if (userThrow === "paper") {
-      if(computerThrow === "rock") {
-        window.alert("Paper beats rock! " + userName + " wins!")
-      } else if (computerThrow === "scissors") {
-        window.alert("Scissors beats paper! The computer wins!")
-      }
+var compare = function (userThrow, computerThrow) {
+  if (userThrow === computerThrow) {
+    window.alert("The result is a tie!")
+  } else if (userThrow === "rock") {
+    if(computerThrow === "scissors"){
+      window.alert("Rock beats scissors! " + userName + " wins!")
+    } else {
+      window.alert("Paper beats rock! The computer wins!")
     }
-  };
+  } else if (userThrow === "paper") {
+    if(computerThrow === "scissors") {
+      window.alert("Scissors beats paper! The computer wins!")
+    } else if (computerThrow === "rock") {
+      window.alert("Paper beats rock!" + userName + " wins!")
+    }
+  } else if (userThrow === "paper") {
+    if(computerThrow === "rock") {
+      window.alert("Paper beats rock! " + userName + " wins!")
+    } else if (computerThrow === "scissors") {
+      window.alert("Scissors beats paper! The computer wins!")
+    }
+  }
+}
+//Invoke the compare function
+compare(userThrow, computerThrow)
 ```
 
 
@@ -298,7 +300,8 @@ We're passing values of userChoice and computerChoice to run the equation.
 The function is called when someone clicks the button via the ```onclick``` attribute!
 
 ```html
-<button class="button" onclick="compare(userThrow, computerThrow);">LETS PLAY RPS!</button>
+<button  onclick="runGame()" class="button">LETS PLAY Rock, Paper, Scissors!</button>
+
 ```
 
 ### Play around in the sandbox some more!
