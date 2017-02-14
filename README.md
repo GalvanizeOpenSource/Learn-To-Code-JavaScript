@@ -326,7 +326,7 @@ You can also check out our part-time courses at [galvanize.com/workshops](http:/
 
 If you're ready for a full-fledged immersive program, Galvanize offers the following:
 
-**Galvanize Web Development Immersive Program**
+[**Galvanize Web Development Immersive Program**](https://new.galvanize.com/austin/web-development)
 - 24 Week Full-Time Program
 - 97% Job Placement Rate within six months
 - Average starting salary: $77,000 per annum
