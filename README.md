@@ -184,8 +184,7 @@ _Is there any other way to do this?_
 
 Time for us to make our *Rock, Paper, Scissors* application!
 
-1. Go to: https://github.com/GalvanizeOpenSource/Learn-To-Code-JavaScript/
-1. Download the zip file of our code
+1. Go to the top of this page, click the green 'download' button and select DOWNLOAD ZIP
 1. Open the files in your text editor
 	a. index.html
 	b. CSS/style.css
@@ -326,7 +325,7 @@ You can also check out our part-time courses at [galvanize.com/workshops](http:/
 
 If you're ready for a full-fledged immersive program, Galvanize offers the following:
 
-[**Galvanize Web Development Immersive Program**](https://new.galvanize.com/austin/web-development)
+[**Galvanize Web Development Immersive Program**](https://new.galvanize.com/austin/web-development	)
 - 24 Week Full-Time Program
 - 97% Job Placement Rate within six months
 - Average starting salary: $77,000 per annum
