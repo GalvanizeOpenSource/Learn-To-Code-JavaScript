@@ -322,7 +322,7 @@ To learn more, email our enrollment department at enrollment@galvanize.com.
 
 ## About the Authors
 
-**Graham McBain** is a graduate of the 3rd cohort of the Galvanzie Full Stack Program and now Evangelist for Galvanize based in the Colorado area. Graham believes that programming is more accessible than people think and is passionate about showing people the path to becoming a developer.
+**Graham McBain** is an alum of the 3rd cohort of the Galvanzie Web Development Program. He previously served as Evangelist for Galvanize based in the Colorado area. Graham believes that programming is more accessible than people think and is passionate about showing people the path to becoming a developer.
 
 **Lee Ngo** is an evangelist for Galvanize based in Seattle. Previously he worked for UP Global (now Techstars) and founded his own ed-tech company in Pittsburgh, PA. Lee believes in learning by doing, engaging and sharing, and he teaches code through a combination of visual communication, teamwork, and project-oriented learning.
 
