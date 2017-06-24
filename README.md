@@ -132,7 +132,7 @@ If it’s `False`, the code will not run.
 
 ```javascript
 if (hour < 18) {
-	greeting = "Good day";
+    greeting = "Good day";
 }
 ```
 if statements by themselves default to `True`.
@@ -144,9 +144,9 @@ if statements by themselves default to `True`.
 
 ```javascript
 if (hour < 18) {
-	greeting = "Good day";
-} else 
-	{ greeting = “Go away.”;
+   greeting = "Good day";
+} else { 
+   greeting = “Go away.”;
 }
 ```
 
@@ -156,11 +156,13 @@ if (hour < 18) {
 
 Add an `else if` in between the `if` and `else` statements.
 ```javascript
-if (hour < 18) 
-{greeting = "Good day";} 
-else if (hour < 9) 
-{greeting = “OK day”;}
-else {greeting = “Go away.”;}
+if (hour < 18) {
+   greeting = "Good day";
+} else if (hour < 9) {
+   greeting = “OK day”;
+} else {
+   greeting = “Go away.”;
+}
 ```
 _This code is actually broken. Can you figure out why?_
 
