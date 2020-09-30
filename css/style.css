@@ -1,3 +1,10 @@
+*{
+margin:0px;
+    padding:0px;
+    box-sizing:none;
+
+}
+
 body {
     background-color: #000000;
     color: #FFFFFF;
@@ -15,4 +22,12 @@ body {
     width: 200px;
     height: 100px;
     display: inline-block;
+}
+.button:hover{
+  word-spacing: 20px;
+    color:blue;
+    top:60%;
+    
+
+
 }
